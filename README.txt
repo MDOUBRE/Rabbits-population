@@ -5,7 +5,7 @@ Dans le dossier il y a tous les fichiers nécessaires à l'éxécution de la sim
 Les codes sources lapin.c et mt19937ar.c en language C.
 Les fichiers objets lapin.o et mt19937ar.o
 Le fichier header matsumoto.h
-Le fichier éxécutif exe1 de la simulation
+Le fichier éxécutif exeSimu de la simulation
 
 
 Pour la compilation j'ai effectué les commandes suivantes : 
