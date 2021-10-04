@@ -127,6 +127,7 @@ Affichage en fin de simulation du nombre total de lapins, de lapins en vie, de l
 
 
 DOUBRE MAXIME
-maxime.doubre@etu.uca.fr
-L2 Informatique
-Université Clermont Auvergne - UCA
+maxime.doubre@gmail.com
+M2 SIAME (Systèmes Informatiques Ambiants, Mobiles et Embarqués)
+Université Paul Sabatier UT3 - Toulouse
+Au moment de ce projet : L2 Informatique - Université Clermont Auvergne - UCA
