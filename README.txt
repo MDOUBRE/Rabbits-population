@@ -1,21 +1,21 @@
 //////////DESCRIPTION : //////////
 
-Dans le dossier il y a tous les fichiers nécessaires à l'éxécution de la simulation.
+In this folder there are all necessary files to execute the simulation.
 
-Les codes sources lapin.c et mt19937ar.c en language C.
-Les fichiers objets lapin.o et mt19937ar.o
-Le fichier header matsumoto.h
-Le fichier éxécutif exeSimu de la simulation
+Source codes : lapin.c et mt19937ar.c en language C.
+Object files : lapin.o et mt19937ar.o
+Header files : matsumoto.h
+The executive file : exeSimu
 
 
-Pour la compilation j'ai effectué les commandes suivantes : 
+To compile put the following commands into a terminal : 
 
 gcc -c lapin.c
 gcc -c mt19937ar.c
 gcc lapin.o mt19937ar.o -o exeSimu
 
 
-Guide de Style : 
+Style guide : 
 
 NASA : 
 
@@ -32,51 +32,51 @@ NASA :
 //////////PROGRAMME : //////////
 
 
-Fonctions :
+Functions :
 
-Lapin : structure lapin composé des variables définissant les lapins.
+Lapin : rabbit strcture composed of variables defining rabbits.
 
-NombreMois() : transforme le nombre d'année de simulation en nombre de mois.
+NombreMois() : transform the number of year of the rabbit into number of month.
 
-Maturite() : génère un age de maturite aléatoire pour chaque lapin.
+Maturite() : generate a random age of maturity for each rabbit.
 
-NbMiseBas() : génère un nombre aléatoire de mise à bas pour l'année pour une femelle.
+NbMiseBas() : generate a random number of litter in the year for a female.
 
-Portee() : génère un nombre aléatoire de bébés lors d'une mise à bas.
+Portee() : generate a random number of babies during a litter.
 
-CreerLapin() : crée un nouveau lapin et initialise ses variables.
+CreerLapin() : create a new rabbit and init its variables.
 
-Sexe() : détermine le sexe du lapin en âge de maturité.
+Sexe() : determine the rabbit sex when in maturity age.
 
-Naissance() : crée les nouveaux lapins en cas de mise à bas d'une femelle.
+Naissance() : create new babies wwhen litter of a female.
 
-Tuer() : change le sexe du lapin a 'd' en cas de mort. 
+Tuer() : kill the rabbit by changing his sex to 'd'. 
 
-Mort() : fait mourir les lapins ou non.
+Mort() : choose if the rabbit sie or not.
 
 
 Main : 
 
----------------------------------PREMIERE PARTIE------------------------------------
+---------------------------------------FIRST PART----------------------------------------
 
-Initialisation de la fonction de Matsumoto
+Initialisation of the Matsumoto function
 
-Définition de toutes les variables et allocation pour le tableau de structures de lapin.
+Définition of all variables and allocation of all rabbit strcture tables.
 
-Demande à l'utilisateur du nombre d'années de la simulation, du nombre de lapins ainsi que du nombre de femelles qu'il veut au début de la simulation.
+Ask to the user of the number of year for the simulation duration, the number of rabbits and the number of female at the beginning of the simulation.
 
-Transformation du nombre d'années en nombre de mois grace à la fonction NombreMois().
+Transformation of the number of year into number of month with the function NombreMois().
 
-Première boucle 'for' dans laquelle on crée les lapins demandés au début avec la fonction CreerLapin(). 
-Incrémentation du numéro de lapin et du nombre de lapins en vies
+First loop 'for' in which we create  rabbits asked for the beginning of the simulation with the function CreerLapin(). 
+Increment of the number of rabbits and the number of alive rabbits.
 
-Deuxième boucle 'for' dans laquelle on définit pour le nombre de femelles demandé à l'utilisateur leur sexe sur 'f'.
+Second loop 'for' in which we define the sexe for all female asked at the beginning.
 
-Troisième boucle 'for' dans laquelle on définit pour le reste des lapins demandés à l'utilisateur leur sexe sur 'm'.
+Third loop 'for' in which we define the sexe for all othe rabbits asked at the beginning.
 
---------------------------------FIN PREMIERE PARTIE----------------------------------
+------------------------------------END FIRST PART---------------------------------------
 
-----------------------------------DEUXIEME PARTIE------------------------------------
+--------------------------------------SECOND PART----------------------------------------
 
 Première boucle 'for' dans laquelle on boucle sur le nombre de mois.
 {
